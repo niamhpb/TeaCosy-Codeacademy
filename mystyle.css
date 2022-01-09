@@ -1,0 +1,667 @@
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+html, body{
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    height: 100%;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Header */
+
+header{
+    box-sizing: border-box;
+    position: fixed;
+    border-bottom: 1px solid seashell;
+    max-height: 69px;
+    width: 100%;
+    display: block;
+    background-color: black;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    }
+
+.logowrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.logo{
+    padding: 10px 0px 9px 10px;
+    max-height: 50px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Navigation - Desktop */
+
+
+.desktopmenu {
+    text-align: right;
+    margin-right: 10px;
+}
+
+li{
+    display: inline-block;
+    font-size: 0.9rem;
+    padding-right: 10px;
+    }
+
+a:link{
+    opacity: 0.6;
+    color: seashell;
+    text-decoration: underline;
+}
+
+a:visited{
+    opacity: 0.6;
+    color: seashell;
+    text-decoration: line-through;
+}
+
+a:hover{
+    opacity: 1;
+    color: seashell;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:active{
+    opacity: 1;
+    color: seashell;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menubuttonwrapper {
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 69px;
+    width: 100%;
+ }
+
+
+
+.dropbtn {
+    color: seashell;
+    background-color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    float: right;
+    text-align: right;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #000000;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 69px;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    opacity: 1;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .dropdown-content{
+    height: 100%;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    }
+
+
+    .dropdownedited{
+        position: relative;
+    }
+  
+  
+    /* Links inside the dropdown */
+  .dropdownedited {
+    color: seashell;
+    padding: 12px 16px;
+    text-decoration: underline;
+    display: block;
+    font-size: 1.2rem;
+    opacity: 0.6;
+    fill-opacity: 1;
+    top: 69px;
+    width: 100%;
+ }
+  
+  /* Change color of dropdown links on hover */
+  .dropdownedited a:hover {
+    opacity: 1;
+    background-color: black;
+    }
+
+    .closebuttonwrapper {
+        box-sizing: border-box;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        top: 20px;
+     }
+  
+
+     .closebutton{
+        display: block;
+        font-size: 2rem;
+        opacity: 1;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        fill-opacity: 1;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 10px;
+        text-align: right;
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        color: seashell;
+        top: 69px;
+    }
+
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Section 1 - Mission */
+
+.mission{    
+    box-sizing: border-box;
+    position: relative;
+    top: 59px;
+    background-image: url(images/img-mission-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 59px;
+    min-height: 700px;
+    display: flex;
+    flex-shrink: 1;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+.missionh2, .missionh4{
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    letter-spacing: 0.05rem;
+}
+
+.missionh2{
+    padding: 12px 9px 3px 6px;
+}
+
+.missionh4{
+    padding: 0px 6px 12px 6px;
+    font-size: 0.75rem;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Section 2 - Tea of the Month */
+
+#teaofthemonth {
+    top: 69px;
+    box-sizing: border-box;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.teaofthemonth-flexcontainers{
+    display: inline-flex;
+    flex-shrink: 1; 
+    max-width: 1000px;    
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.teaofthemonth-flexcontainers > div {
+    margin: 10px;
+  }
+
+img{
+    max-height: 200px;
+    max-width: 300px;
+    padding: 0px 0px 10px 10px;
+
+}
+
+h3{
+    vertical-align: text-top;
+    font-size: 0.82rem;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Section 3 - Location -desktop */
+
+#location-desktop{    
+    top: 69px;
+    box-sizing: border-box;
+    position: relative;
+    background-image: url(images/img-locations-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    margin-left: 45px;
+    margin-right: 45px;
+    height: 550px;
+    background-size: 100%;
+    text-align: center;
+    }
+
+
+    .locationheader2{
+        text-align: center;
+        width: 100%;
+        letter-spacing: 0.05rem;
+        vertical-align: text-bottom;
+        padding: 59px 0px 0px 0px;
+    }
+
+    .location-flexcontainers{
+        background-color: black;
+        display: inline-flex;
+        flex-shrink: 1;  
+        justify-content: center;
+        align-content: center;
+        width: 300px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .addressh3{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+}
+
+    p{
+        margin-top: 0px;
+        font-size: 0.73rem;
+        line-height: 2rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    /* Section 3 - Location -mobile */
+
+    #location-mobile{    
+        box-sizing: border-box;
+        position: relative;
+        top: 69px;
+        background-image: url(images/img-locations-background.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; 
+        margin-left: 45px;
+        margin-right: 45px;
+        min-height: 300px;
+        background-size: 300%;
+        text-align: center;
+        }
+
+     .location-flexcontainers-mobile {
+        background-color: black;
+        display: inline-flex;
+        flex-shrink: 1;  
+        justify-content: center;
+        align-content: center;
+        width: 300px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        }
+
+    .locationheader2-mobile{
+            text-align: center;
+            width: 100%;
+            letter-spacing: 0.05rem;
+            vertical-align: text-bottom;
+            padding: 30px 0px 0px 0px;
+            text-shadow: 2px 2px 6px black;
+        }
+
+    .locationheader3-mobile {
+            font-size: 0.82rem;
+            width: 100%;
+            text-align: center;
+        }
+
+    .paragraph-fulladdress-mobile{
+        margin-top: 0px;
+        font-size: 0.73rem;
+        text-align: center;
+        font-weight: bold;
+}
+
+    .showaddress{
+        top: 0px;
+        cursor:pointer;
+        font-style: italic;
+        background-color: #000000; 
+        border: none;
+        color: gray;
+        padding: 0px 0px 30px 0px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+        width: 100%;
+     }
+
+     .showaddress:hover{
+        top: 0px;
+        cursor:pointer;
+        font-style: italic;
+        background-color: #000000; 
+        border: none;
+        color: white;
+        padding: 0px 0px 30px 0px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+        width: 100%;
+     }
+
+    #fulladdresswrapper{
+        display: none;
+     }
+
+     #fulladdresswrapper2{
+        display: none;
+     }
+
+     #fulladdresswrapper3{
+        display: none;
+     }
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    /* Section 4 - Footer */
+
+    .footerwrapper {
+        position: relative;
+        top: 100px;
+        background-color: black;
+    }
+
+    .footerinfo{
+        text-align: center;
+    }
+
+    .footerinfo{
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+}
+    .headline5foraddress{
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .addresslink:link {
+        text-decoration: none;
+      }
+
+    .addresslink:hover {
+        text-decoration: none;
+      }
+    
+    .addresslink:active{
+        text-decoration: none;
+    }
+
+    .phonenumber{
+        margin-top: 0px;
+        font-size: 0.73rem;
+        text-align: center;
+        font-weight: regular;
+    }
+
+    .copyright{
+        margin-top: 0px;
+        margin-left: 20px;
+        font-size: 0.6rem;
+        text-align: left;
+        font-weight: regular;
+    }
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Standard Screen Sign Settings */
+
+@media screen and (min-width: 1024px) {
+
+    .dropdownmenu{
+        display: none;
+    }
+
+    #location-mobile{
+        display: none;
+    }
+
+
+     }
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Tablet Breaking Point */
+/* Background Image */
+@media screen and (min-width: 699px) and (max-width: 1024px) {
+
+    header{
+        box-sizing: border-box;
+        position: fixed;
+        border-bottom: 1px solid seashell;
+        max-height: 69px;
+        width: 100%;
+        display: block;
+        background-color: black;
+        z-index: 1;
+        color: black;
+        }
+
+    .mission{
+       min-height: 600px;
+       overflow: hidden;
+       background-size: 150%;
+       margin-left: 30px;
+       margin-right: 30px;
+    }
+
+    .dropdownmenu{
+        display: none;
+    }
+
+    #location-mobile{
+        display: none;
+    }
+
+
+      #location-desktop{    
+        top: 69px;
+        box-sizing: border-box;
+        position: relative;
+        background-image: url(images/img-locations-background.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; 
+        margin-left: 45px;
+        margin-right: 45px;
+        height: 730px;
+        background-size: 210%;
+        text-align: center;
+        } 
+
+
+    .location-flexcontainers{
+        margin-bottom: 15px;
+    }
+
+    .locationheader2{
+        padding: 15px 0px 0px 0px;
+       }
+
+
+       .copyright{
+        text-align: center;
+         }
+  
+
+
+
+}
+
+ /* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+     @media screen and (min-width: 576px) and (max-width: 700px) {
+ .mission{
+    min-height: 400px;
+    overflow: hidden;
+    background-size: 170%;
+    margin-left: 20px;
+    margin-right: 20px;
+ }
+
+ .dropdownmenu{
+    display: none;
+}
+
+#location-mobile{
+    display: none;
+}
+
+#location-desktop{    
+    top: 69px;
+    box-sizing: border-box;
+    position: relative;
+    background-image: url(images/img-locations-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover; 
+    margin-left: 45px;
+    margin-right: 45px;
+    height: 730px;
+    background-size: 250%;
+    text-align: center;
+    } 
+
+    .location-flexcontainers{
+        margin-bottom: 10px;
+    }
+
+    .locationheader2{
+     padding: 30px 0px 0px 0px;
+    }
+
+    .copyright{
+        text-align: center;
+         }
+
+  }
+
+
+  /* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+ 
+ 
+  @media screen and (min-width: 320px) and (max-width: 575px) {
+
+    .mission{
+        min-height: 450px;
+        overflow: hidden;
+        background-size: 200%;
+        margin-left: 6px;
+        margin-right: 6px;
+        }
+
+    .missionh2{
+        font-size: 1rem;
+    }
+    .missionh4{
+        font-size: 0.70rem;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+
+    h4{
+        font-size: 0.8rem;
+    }
+
+    h3{
+        font-size: 0.8rem;
+    }
+
+    header{
+        display: flex;
+        width: 100%;
+        }
+
+
+    .desktopmenu{
+        display: none;
+    }
+
+    #location-desktop{
+        display: none;
+    }
+
+    img{
+ 
+        padding: 0px;
+    }
+
+    .copyright{
+        text-align: center;
+         }
+
+
+}

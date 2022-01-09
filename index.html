@@ -1,0 +1,186 @@
+<html>
+<head>
+    <title>Tea Cosy</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="myjavascript.js">
+    </script>
+
+    </head>
+   
+<body>
+    <header>
+
+        <div class="logowrapper"><image class="logo" src="images/img-tea-cozy-logo.png"></image></div>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--Navigation for desktop-->
+        <navigation>
+            <ul class="desktopmenu">
+                <li><a href="#ourmission">Mission</a></li>
+                <li><a href="#teaofthemonth">Featured Tea</a></li>
+                <li><a href="#location-desktop">Locations</a></li>
+  </ul>
+</div>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--Navigation for mobile-->
+
+  <div class="dropdownmenu">
+      <div class="menubuttonwrapper"><div class="buttonwrapperwrapper"></div>
+    <button onclick="myFunctionfordropdown()" class="dropbtn">&#x2261;</button>
+</div></div>
+    <div id="myDropdown" class="dropdown-content">
+        <div class="closebuttonwrapper"><button onclick="myFunctionfordropdown()" class="closebutton">x</button></div>
+        <a class="dropdownedited" href="#ourmission">Mission</a>
+        <a class="dropdownedited" href="#teaofthemonth">Featured Tea</a>
+        <a class="dropdownedited" href="#location-mobile">Locations</a> 
+    
+     </div>
+
+  
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+<!--end of navigation-->  
+</navigation>
+
+
+<!--end of header-->     
+    </header>
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--Our Mission-->
+
+    <section id="ourmission">
+        <div class="mission">
+    <h2 class="missionh2">Our Mission</h2>
+        <h4 class="missionh4">Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fairtrade, Organic Tea</h4>
+    </div>
+    </div>
+    </section>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--Tea of the Month-->
+
+
+<section id="teaofthemonth">
+
+<h2>Tea of the month</h2>
+<h4>What's Steeping at the Tea Cosy?</h4>
+
+<div class="teaofthemonth-flexcontainers">
+
+<div><img src="images/img-berryblitz.jpg" /><h3>Fall Berry Blitz Tea</h3></div>
+<div><img src="images/img-spiced-rum.jpg" /><h3>Spiced Rum Tea</h3></div>
+<div><img src="images/img-donut.jpg" /><h3>Seasonal Donuts</h3></div>
+<div><img src="images/img-myrtle-ave.jpg" /><h3>Myrtle Avenue Tea</h3></div>
+<div><img src="images/img-bedford-bizarre.jpg" /><h3>Bedford Bizzare Tea</h3</div>
+
+</div>
+
+</section>
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------Locations for desktop--------------->
+
+
+<section id="location-desktop">
+<div class="locationwrapper">  
+    <h2 class="locationheader2">Locations</h2>
+  
+    <div class="location-flexcontainers-wrapper">
+    <div class="location-flexcontainers"><h3 class="addressh3">Downtown</h3>
+        <p>384 West 4th St <br>
+        Suite 108<br>
+         Portland, Maine</p></div>
+
+
+    <div class="location-flexcontainers"><h3 class="addressh3">East Bayside</h3>
+        <p>3433 Phishermans Avenue <br>
+        (Northwest Corner) <br>
+        Portland, Maine</p></div>
+
+
+    <div class="location-flexcontainers"><h3 class="addressh3">Oakdale</h3>
+        <p>515 Crescent Avenue <br>
+        Second Floor<br>
+         Portland, Maine</p></div>
+         
+        </div>
+    </div>  
+
+</section>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------Locations for mobile--------------->
+
+<section id="location-mobile">
+    
+    <h2 class="locationheader2-mobile">Locations in Portland, Maine</h2>
+    
+    <div class="location-flexcontainers-mobile">
+
+        <h3 class="locationheader3-mobile">Downtown</h3>
+
+        <button class="showaddress" onclick="myFunctionforaddress1()">Show Full Address</button>
+
+            <div class="fulladdress">
+                <div id="fulladdresswrapper"><p class="paragraph-fulladdress-mobile">384 West 4th St <br>
+                Suite 108</p>
+        </div></div>
+      
+    </div>
+
+    <div class="location-flexcontainers-mobile">
+     <h3 class="locationheader3-mobile">East Bayside</h3>
+
+        <button class="showaddress" onclick="myFunctionforaddress2()">Show Full Address</button>
+
+            <div class="fulladdress">
+                <div id="fulladdresswrapper2"><p class="paragraph-fulladdress-mobile">3433 Phishermans Avenue <br>
+                (Northwest Corner)</p>
+        </div></div>
+      
+    </div>
+
+    <div class="location-flexcontainers-mobile">
+        <h3 class="locationheader3-mobile">Oakdale</h3>
+   
+           <button class="showaddress" onclick="myFunctionforaddress3()">Show Full Address</button>
+   
+               <div class="fulladdress">
+                   <div id="fulladdresswrapper3"><p class="paragraph-fulladdress-mobile">515 Crescent Avenue <br>
+                    Second Floor</p>
+           </div></div>
+         
+       </div>
+
+
+</section>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--Contact Details-->
+
+
+<footer>
+
+    <div class=footerwrapper>
+   <h3 class="footerinfo">The Tea Cosy</h3>
+   <h5 class="headline5foraddress"><a class="addresslink" href="mailto:contact@theteacosy.com">contact@theteacosy.com</a></h5> 
+    <p class ="phonenumber">917-555-8904</p>
+
+
+    <p class ="copyright">copyright The Tea Cosy 2017</p>
+
+</div>
+</footer>
+
+
+    </body>
+</html>
